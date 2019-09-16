@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*main(*/
+.main-headline > h1 {
+    @extend.headline-h1;
+}
+
+/*main-featured*/ 
+.main-featured-headline > h1 {
+    @extend.headline-h1;
+}
+
+.block-new > p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $main-color;
+    padding: 5px 15px;
+    vertical-align: auto;
+    font-weight: bolder;
+}
+
+.block-sale > p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $main-color;
+    padding: 5px 15px;
+    vertical-align: auto;
+    font-weight: bolder;
+}
+
+/*section-banner*/
+.banner-text > p {
+    color: $other-color;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner-text > span {
+    color: $other-color;
+    font-size: 25px;
+}
+
+/*main-best*/
+.main-best-headline > h1 {
+    @extend.headline-h1;
+}
+
+.main-best-description > p {
+    @extend.description-p;
+}
+
+/*section-review*/
+.review-headline > h1 {
+    @extend.headline-h1;
+}
+
+.review > p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.review > span {
+    font-size: 16px;
+    color: $main-color;
+}
+
+/*section-newsletter*/
+.newsletter-headline > h1 {
+    @extend.headline-h1;
+}
+
+.section-newsletter > p {
+    font-size: 16px;
+    color: $other-color;
+}
+
+/*aside*/
+.aside-headline > h1 {
+    @extend.headline-h1;
+}
+
+/*article*/
+.article-headline > h1 {
+    @extend.headline-h1;
+}
+
+.news-block > p {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.news-block > span {
+    font-size: 14px;
+}
+
+/*section-contact*/
+.contact-headline > h1 {
+    @extend.headline-h1;
+    color: $other-color;
+}
+
+.contact-info > h1 {
+    color: $other-color;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-info > h1 > span {
+    color: $main-color;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-info > h5 {
+    color: $other-color;
+    font-size: 16px;
+}
+
+.contact-info > span {
+    color: $other-color;
+    font-size: 14px;
+    padding: 10px 0 15px 0;
+}
+
+.contact-info > p {
+    color: $other-color;
+    font-size: 12px;
+}
+
+.contact-info > p > span {
+    color: $main-color;
+}
+
+/*footer*/
+.footer > p {
+    color: $other-color;
+    font-size: 14px;
+}
+
+.footer > p > span {
+    color: $main-color;
+}

@@ -1,0 +1,36 @@
+.decoration-block {
+    width: 160px;
+    height: 15px;
+    border: 2px solid $main-color;
+    border-left: none;
+    border-right: none;
+    margin-top: 30px;
+}
+
+.sub-decoration-block {
+    height: 5px;
+    width: 160px;
+    background-color: $main-color;
+    margin: 3px 0;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 40px;
+    background: linear-gradient(to right, $gradient-color 70%, $gradient-color-to);
+}
+
+.description-p {
+    font-size: 16px;
+    font-weight: bolder;
+    color: $other-color;
+    text-transform: uppercase;
+    margin: 8px;
+}
+
+.headline-h1 {
+    font-size: 45px;
+    font-weight: bolder;
+}

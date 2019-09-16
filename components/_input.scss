@@ -1,0 +1,61 @@
+#email {
+    max-width: 400px;
+    min-width: 250px;
+    height: 50px;
+    padding-left: 15px;
+
+    &:hover {
+        background: $background-color;
+    }
+}
+
+/*section-contact*/
+.contact-forms-top > input {
+    background: $other-background-color;
+    padding-left: 15px;
+    height: 50px;
+    max-width: 250px;
+    margin: 0 15px 15px 15px;
+    border: 1px solid $other-color;
+
+    &::placeholder {
+        color: $other-color;
+        font-size: 14px;
+    }
+}
+
+.contact-forms-middle > input {
+    background: $other-background-color;
+    padding-left: 15px;
+    height: 50px;
+    max-width: 250px;
+    margin: 15px 15px 15px 15px;
+    border: 1px solid $other-color;
+
+    &::placeholder {
+        color: $other-color;
+        font-size: 14px;
+    }
+}
+
+.contact-forms-bottom > textarea {
+    background: $other-background-color;
+    padding-left: 15px;
+    height: 115px;
+    max-width: 520px;
+    margin: 15px 15px 15px 15px;
+    border: 1px solid $other-color;
+
+    &::placeholder {
+        color: $other-color;
+        font-size: 14px;
+    }
+}
+
+input:focus {
+    background: $background-color;
+}
+
+textarea:focus {
+    background: $background-color;
+}

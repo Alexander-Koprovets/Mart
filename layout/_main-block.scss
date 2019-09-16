@@ -1,0 +1,373 @@
+.main {
+    grid-area: main;
+}
+
+.decoration {
+    @extend.decoration-block;
+}
+
+.sub-decoration {
+    @extend.sub-decoration-block;
+}
+
+.new-product {
+    margin: 0 15px;
+}
+
+.product-photo > img {
+    max-height: 285px;
+    max-width: 250px;
+}
+
+.product-photo {
+    max-height: 285px;
+    max-width: 250px;
+    position: relative;
+
+    &:hover .product-hover {
+        display: block;
+    }
+}
+
+.main-new-description {
+    @extend.description;
+
+    &:hover {
+        background: linear-gradient(to right, $main-color 70%, #8c8c8c);
+    }
+}
+
+.main-new-description > p {
+    @extend.description-p;
+}
+
+.main-new {
+    min-height: 650px;
+    background-color: $background-color;
+    display: grid;
+    grid-template-rows: 180px 470px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "main-headline"
+        "main-new-product"
+}
+
+.main-headline {
+    grid-area: main-headline;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-new-product {
+    grid-area: main-new-product;
+    min-height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-hover {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    top: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.like, .arrow, .clock {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    margin: 5px;
+
+    &:hover {
+        background: $main-color;
+    }
+}
+
+.basket {
+    width: 170px;
+    height: 50px;
+    border: 2px solid #ffffff;
+
+    &:hover {
+        background: $main-color;
+    }
+}
+
+.basket > a > span {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.product-hover-element {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 625px) {
+    .product-photo > img {
+        max-height: 150px;
+        max-width: 100px;
+    }
+
+    .product-photo {
+        max-height: 150px;
+        max-width: 100px;
+    }
+
+    .new-product {
+        max-height: 370px;
+        max-width: 100px;
+        margin: 0 15px;
+    }
+
+    .main-new-description {
+        width: 100px;
+        height: 60px;
+        margin-top: 200px;
+    }
+
+    .main-new-description > p {
+        font-size: 12px;
+    }
+
+    .product-hover {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        display: block;
+        height: 250px;
+        width: 100px;
+    }
+
+    .basket > a > span {
+        display: none;
+    }
+
+    .basket {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+    }
+    
+    .product-hover-element {
+        height: 220px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 626px) and (max-width: 1024px) {
+    .product-photo > img {
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    .product-photo {
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    .new-product {
+        width: 150px;
+        height: 200px;
+        margin: 0 15px;
+    }
+
+    .main-new-description {
+        width: 150px;
+        height: 60px;
+    }
+
+    .basket > a > span {
+        display: none;
+    }
+
+    .basket {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+    }
+    
+    .product-hover-element {
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/*main-featured*/
+.main-featured {
+    max-height: 1200px;
+    grid-template-rows: 180px 110px 910px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "main-featured-headline"
+        "main-btn"
+        "main-featured-product"
+}
+
+.main-featured-headline {
+    grid-area: main-featured-headline;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-btn {
+    grid-area: main-btn;
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.main-featured-product {
+    grid-area: main-featured-product;
+    min-height: 910px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-product-top {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-product {
+    margin: 0 15px 20px 0;
+}
+
+.feat-product-photo {
+    max-height: 285px;
+    width: 250px;
+    background-color: $background-color;
+    position: relative;
+
+    &:hover .product-hover {
+        display: block;
+    }
+}
+
+.feat-product-photo > img {
+    max-height: 285px;
+    width: 250px;
+}
+
+.main-feat-description {
+    @extend.description;
+
+    &:hover {
+        background: linear-gradient(to right, $main-color 70%, #8c8c8c);
+    }
+}
+
+.featured-product-bott {
+    display: flex;
+    justify-content: center;
+}
+
+.block-new {
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid $main-color;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.block-sale {
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid $main-color;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.main-feat-description > p {
+    @extend.description-p;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 625px) {
+    .feat-product-photo > img {
+        max-height: 150px;
+        max-width: 100px;
+    }
+
+    .feat-product-photo {
+        max-height: 150px;
+        max-width: 100px;
+    }
+
+    .featured-product {
+        max-height: 370px;
+        max-width: 100px;
+        margin: 15px 15px;
+    }
+
+    .main-feat-description {
+        width: 100px;
+        height: 60px;
+        margin-top: 240px;
+    }
+
+    .main-feat-description > p {
+        font-size: 12px;
+    }
+
+    .featured-product-bott {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 626px) and (max-width: 1024px) {
+    .feat-product-photo > img {
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    .feat-product-photo {
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    .featured-product {
+        width: 150px;
+        height: 200px;
+        margin: 0 15px;
+    }
+
+    .main-feat-description {
+        width: 150px;
+        height: 60px;
+    }
+
+    .featured-product-bott {
+        margin: 70px;
+    }
+}

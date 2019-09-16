@@ -1,0 +1,69 @@
+.logo-call {
+  background: url(sprites.png) no-repeat -346px -257px;
+  width: 18px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.logo-mail {
+  background: url(sprites.png) no-repeat -386px -261px;
+  width: 18px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.logo-side-bar {
+  background: url(css_sprites.png) no-repeat -622px -163px;
+  width: 78px;
+  height: 26px;
+}
+
+/*nav*/
+.logo-setting {
+  background: url(sprites.png) no-repeat -10px -13px;
+  width: 100px;
+  height: 100px;
+}
+
+.logo-setting:hover {
+  background: url(sprites.png) no-repeat -130px -13px;
+  width: 100px;
+  height: 100px;
+}
+
+.logo-safe {
+  background: url(sprites.png) no-repeat -250px -14px;
+  width: 100px;
+  height: 94px;
+}
+
+.logo-safe:hover {
+  background: url(sprites.png) no-repeat -10px -140px;
+  width: 100px;
+  height: 94px;
+}
+
+.logo-global {
+  background: url(sprites.png) no-repeat -370px -10px;
+  width: 100px;
+  height: 100px;
+}
+
+.logo-global:hover {
+  background: url(sprites.png) no-repeat -370px -130px;
+  width: 100px;
+  height: 100px;
+}
+
+.logo-compass {
+  background: url(sprites.png) no-repeat -139px -139px;
+  width: 82px;
+  height: 94px;
+}
+
+.logo-compass:hover {
+  background: url(sprites.png) no-repeat -259px -139px;
+  width: 82px;
+  height: 94px;
+}
+/*# sourceMappingURL=logo.css.map */

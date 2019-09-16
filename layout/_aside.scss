@@ -1,0 +1,50 @@
+.aside {
+    grid-area: aside;
+    min-height: 450px;
+    background: $background-color;
+    display: grid;
+    grid-template-rows: 180px 270px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "aside-headline"
+        "aside-img"
+}
+
+.aside-headline {
+    grid-area: aside-headline;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.aside-img {
+    min-height: 270px;
+    grid-area: aside-img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aside-img  > img {
+    height: 150px;
+    width: 250px;
+    border: 1px solid #000000;
+    margin: 0 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 625px) {
+    .aside-img > img {
+        max-height: 100px;
+        max-width: 120px;
+    }
+}
+
+@media screen and (min-width: 625px) and (max-width: 1024px) {
+    .aside-img > img {
+        max-height: 150px;
+        max-width: 180px;
+    }
+}

@@ -1,0 +1,90 @@
+.logo-call {
+	background: url(images/css_sprites.png) no-repeat -413px -163px;
+	width: 15px;
+	height: 15px;
+    margin-right: 5px;
+}
+
+.logo-mail {
+	background: url(images/css_sprites.png) no-repeat -414px -127px;
+	width: 18px;
+	height: 12px;
+    margin-right: 5px;
+}
+
+.logo-side-bar {
+	background: url(images/css_sprites.png) no-repeat -130px -78px;
+	width: 78px;
+	height: 26px;
+}
+
+.logo-lock {
+	background: url(images/css_sprites.png) no-repeat -415px -198px;
+	width: 11px;
+	height: 15px;
+	display: inline-block;
+}
+
+.logo-cash {
+	background: url(images/css_sprites.png) no-repeat -417px -79px;
+	width: 17px;
+	height: 23px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/*nav*/
+.logo-setting {
+	background: url(images/css_sprites.png) no-repeat -243px -12px;
+	width: 65px;
+	height: 65px;
+
+	&:hover {
+		background: url(images/css_sprites.png) no-repeat -243px -101px;
+		width: 65px;
+		height: 65px;
+	}
+}
+
+.logo-safe {
+	background: url(images/css_sprites.png) no-repeat -10px -134px;
+	width: 65px;
+	height: 62px;
+
+	&:hover {
+		background: url(images/css_sprites.png) no-repeat -95px -134px;
+		width: 65px;
+		height: 61px;
+	}
+}
+
+.logo-global {
+	background: url(images/css_sprites.png) no-repeat -185px -224px;
+	width: 55px;
+	height: 55px;
+
+	&:hover {
+		background: url(images/css_sprites.png) no-repeat -333px -15px;
+		width: 55px;
+		height: 55px;
+	}
+}
+
+.logo-compass {
+	background: url(images/css_sprites.png) no-repeat -16px -220px;
+	width: 53px;
+	height: 63px;
+
+	&:hover {
+		background: url(images/css_sprites.png) no-repeat -101px -220px;
+		width: 53px;
+		height: 63px;
+	}
+}
+
+/*section-newsletter*/
+.newsletter-btn {
+	background: url(images/css_sprites.png) no-repeat -13px -33px;
+	width: 94px;
+	height: 50px;
+}

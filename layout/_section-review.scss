@@ -1,0 +1,64 @@
+.section-review {
+    grid-area: section-review;
+    min-height: 800px;
+    display: grid;
+    grid-template-rows: 180px 620px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "review-headline"
+        "review"
+}
+
+.review-headline {
+    grid-area: review-headline;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.review {
+    grid-area: review;
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.review-icon-top {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%
+}
+
+.review-icon-top > img {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%
+}
+
+.review-icon-bott {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.review-icon-bott > img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 5px solid $border-color;
+
+    &:hover {
+        border-color: $main-color;
+    }
+}
+
+.review-icon {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,123 @@
+.section-product {
+    grid-area: section-product;
+    min-height: 650px;
+    width: 100%;
+    background-color: #e9f0fd;
+    display: grid;
+    grid-template-rows: 180px 470px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "main-best-headline"
+        "main-best-product"
+}
+
+.decoration {
+    @extend.decoration-block;
+}
+
+.sub-decoration {
+    @extend.sub-decoration-block;
+}
+
+.best-product {
+    margin: 0 15px;
+}
+
+.best-product-photo > img {
+    max-height: 285px;
+    width: 250px;
+}
+
+.best-product-photo {
+    max-height: 285px;
+    width: 250px;
+    position: relative;
+
+    &:hover .product-hover {
+        display: block;
+    }
+}
+
+.main-best-description {
+    @extend.description;
+
+    &:hover {
+        background: linear-gradient(to right, $main-color 70%, #8c8c8c);
+    }
+}
+
+.main-best-product {
+    min-height: 470px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-best-headline {
+    grid-area: main-best-headline;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-best-product {
+    grid-area: main-best-product;
+    min-height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 320px) and (max-width: 625px) {
+    .best-product-photo > img {
+        max-height: 150px;
+        max-width: 100px;
+    }
+
+    .best-product-photo {
+        max-height: 150px;
+        max-width: 100px;
+    }
+
+    .best-product {
+        max-height: 370px;
+        max-width: 100px;
+        margin: 0 15px;
+    }
+
+    .main-best-description {
+        width: 100px;
+        height: 60px;
+        margin-top: 200px;
+    }
+
+    .main-best-description > p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 626px) and (max-width: 1024px) {
+    .best-product-photo > img {
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    .best-product-photo {
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    .best-product {
+        width: 150px;
+        height: 200px;
+        margin: 0 15px;
+    }
+
+    .main-best-description {
+        width: 150px;
+        height: 60px;
+    }
+}

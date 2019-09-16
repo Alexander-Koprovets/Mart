@@ -1,0 +1,38 @@
+.section-newsletter {
+    grid-area: section-newsletter;
+    min-height: 450px;
+    background-color: $main-color;
+    background-image: url(images/elementl.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-decoration {
+    width: 160px;
+    height: 15px;
+    border: 2px solid $other-color;
+    border-left: none;
+    border-right: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.newsletter-sub-decoration {
+    height: 5px;
+    width: 160px;
+    background-color: $other-color;
+    margin: 3px 0;
+}
+
+.section-newsletter > form {
+    display: flex;
+    justify-content: flex-end;
+}

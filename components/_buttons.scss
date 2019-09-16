@@ -1,0 +1,80 @@
+.btn-side-bar > button {
+    background-color: $other-color;
+    color: $font-color;
+    font-size: 10px;
+    margin: 0 15px;
+    border: none;
+    font-weight: bold;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+/*carousel*/
+.btn-carousel {
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 100px;
+    max-height: 35px;
+    border: 1px solid $main-color;
+    color: $other-color;
+    font-size: 10px;
+
+    &:hover {
+        background: $main-color;
+    }
+}
+
+/*main-featured*/ 
+.main-btn > button {
+    height: 25px;
+    border: 2px solid $main-color;
+    color: $main-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 7.5px;
+    padding: 2px 5px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    &:hover {
+    color: $other-color;
+    background-color: $main-color;
+    }
+}
+
+/*section-newsletter*/
+.newsletter-btn {
+    height: 50px;
+    width: 95px;
+    border: 2px solid $other-color;
+    background-color: $main-color;
+}
+
+/*article*/
+.article-btn {
+    height: 45px;
+    width: 145px;
+    background: #1abc9c;
+    border: 1px solid $main-color;
+    color: $other-color;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/*section-contact*/
+#contact-btn {
+    height: 50px;
+    width: 150px;
+    background: $main-color;
+    border: 1px solid $main-color;
+    margin: 15px 15px;
+
+    & > p {
+        color: $other-color;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,40 @@
+.article {
+    grid-area: article;
+    min-height: 800px;
+}
+
+.article-headline {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.news-block > img {
+    max-height: 150px;
+    max-width: 250px;
+}
+
+.decor-line {
+    width: 100px;
+    height: 3px;
+    border: 1px solid $main-color;
+    background: #1abc9c;
+    margin-bottom: 15px;
+}
+
+.news-block {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.article-news {
+    min-height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,55 @@
+.section-contact {
+    grid-area: section-contact;
+    min-height: 720px;
+    background:$other-background-color;
+    background-image: url(images/world-map.png);
+}
+
+.contact-headline {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact-info-mlock {
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-forms {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-forms-top, .contact-forms-middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-forms-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-network {
+    width: 30px;
+    height: 30px;
+    background: $other-background-color;
+    border: 1px solid #ffffff;
+
+    &:hover {
+        background: $main-color;
+    }
+}
